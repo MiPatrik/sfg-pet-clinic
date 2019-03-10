@@ -10,26 +10,26 @@ import java.util.Set;
 public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService {
     @Override
     public PetType findById(Long id) {
-        return null;
+        return super.findById(id);
     }
 
     @Override
     public PetType save(PetType petType) {
-        return null;
+        return super.save(petType);
     }
 
     @Override
     public Set<PetType> findAll() {
-        return null;
+        return super.findAll();
     }
 
     @Override
     public void delete(PetType object) {
-
+        super.delete(object);
     }
 
     @Override
     public void deleteById(Long id) {
-
+        super.deleteById(id);
     }
 }
