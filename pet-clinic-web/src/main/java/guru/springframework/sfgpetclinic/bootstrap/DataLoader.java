@@ -55,7 +55,6 @@ public class DataLoader implements CommandLineRunner {
         radiology.setDescription("Dentistry");
         Speciality savedDentistry = specialityService.save(dentistry);
 
-
         Owner owner1 = new Owner();
         owner1.setFirstName("Michael");
         owner1.setLastName("Weston");
