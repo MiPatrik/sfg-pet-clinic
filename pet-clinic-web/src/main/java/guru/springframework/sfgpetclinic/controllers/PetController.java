@@ -23,7 +23,7 @@ import java.util.Collection;
 
 @Controller
 @RequestMapping("/owners/{ownerId}")
-public class PetContoller {
+public class PetController {
 
 	private static final String VIEWS_OWNER_CREATE_OR_UPDATE_FORM = "pets/createOrUpdatePetForm";
 	private static final String REDIRECT_OWNERS = "redirect:/owners/";
@@ -32,7 +32,7 @@ public class PetContoller {
 	private final OwnerService ownerService;
 	private final PetTypeService petTypeService;
 
-	public PetContoller(PetService petService, OwnerService ownerService, PetTypeService petTypeService) {
+	public PetController(PetService petService, OwnerService ownerService, PetTypeService petTypeService) {
 		this.petService = petService;
 		this.ownerService = ownerService;
 		this.petTypeService = petTypeService;
